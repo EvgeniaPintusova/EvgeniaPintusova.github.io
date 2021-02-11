@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=100%, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>Резюме Пинтусова Е. Н.</title>
+  </head>
+  <body>
+    <header class="head">
+      <div class="container head_flex">
+        <img src="pictures/me_2.jpg" alt="фотография" />
+        <h1>Пинтусова Евгения</h1>
+      </div>
+    </header>
+    <!-- Block with information about myself -->
+    <main class="main">
+      <div class="container main_flex">
+        <div class="information">
+          <h1>Информация</h1>
+          <div>
+            <img src="pictures/email.png" alt="иконка электронная почта" />
+            <p>jjane200012@gmail.com</p>
+          </div>
+          <div>
+            <img src="pictures/phone.png" alt="иконка телефон" />
+            <p>+375-44-793-62-16</p>
+          </div>
+          <div>
+            <img src="pictures/education.png" alt="иконка образование" />
+            <p>студентка БГУ</p>
+          </div>
+          <div>
+            <img src="pictures/age.png" alt="иконка возраст" />
+            <p><span id="year"></span> лет</p>
+          </div>
+        </div>
+
+        <div class="about_me">
+          <h1>О себе</h1>
+          <p>
+            Я студентка третьего курса БГУ. Учусь на ФСК на специальности
+            "Веб-программирование и компьютерный дизайн".
+          </p>
+          <p>
+            Общительная, улыбчивая и жизнерадостная девушка. Любознательная:
+            люблю учиться и узнавать что-то новое. Трудолюбивая и
+            целеустремленная &mdash; думаю, эти качества не дают мне
+            сидеть на месте, а заставляют думать о достижении высот. 
+          </p>
+          <p>
+            Хочу связать свою профессию с веб-разработкой. Умею рисовать в различных графических редакторах и разрабатывать макеты веб-приложений; создавать адаптивные html-страницы с использованием различных технологий; разрабатывала своё небольшое приложение мессенджера с испотльзованием JS; работала с CMS, СУБД, PHP.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div>Резюме Пинтусовой Евгении</div>
+      </div>
+    </footer>
+      <script type="text/javascript">
+        let nowyear = new Date();
+        let mybirth = new Date(2000, 11, 19);
+        let myold = (nowyear-mybirth)/(60*60*24*1000*365);
+        document.getElementById("year").innerHTML = Math.trunc(myold);
+  </script>
+  </body>
+
+</html>
